@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="shortcut icon" href="../img/Favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navbar__menu">
+                <li><a class="menuInactivo" href="../index.html">Inicio</a></li>
+                <li><a class="menuInactivo" href="./about.html">Sobre nosotros</a></li>
+                <li><a class="menuActivo" href="./catalog.html">Catálogo</a></li>
+                <li><a class="menuInactivo" href="./contact.html">Contacto</a></li>
+            </ul>
+
+            <a href="../index.html"><img class="imgFavicon" src="../img/Favicon.png" alt="Favicon"></a>
+
+            <div class="menu_secundario">
+                <input class="input" type="text" placeholder="Buscar">
+
+                <a href="#"><img class="imgCarrito" src="../img/carrito.png" alt="carrito"></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="productoSeccion">
+            <div class="productoSeccion__titulo">
+                <h1 class="letraTitulo">Producto 123</h1>
+            </div>
+            <div class="productoSeccion__descripcion">
+                <h4 class="letraTitulo">Descripción</h4>
+                <p>Envase redondo de cuello alargado y terminado ovalado. Presenta un altorrelieve en la base con
+                    indicaciones de material</p>
+            </div>
+            <div class="productoSeccion__usos">
+                <h4 class="letraTitulo">Usos</h4>
+                <ul class="productoSeccion__tiposUsos">
+                    <li>Cosmética</li>
+                    <li>Farmacéutica</li>
+                    <li>Alimentos</li>
+                    <li>Industrial</li>
+                </ul>
+            </div>
+            <div class="productoSeccion__imagen">
+                <img class="imagenProducto" src="../img/catalogo/146.png" alt="">
+            </div>
+            <div class="productoSeccion__caracteristicas">
+                <label>Color
+                    <select class="btn">
+                        <option value="natural">Natural</option>
+                        <option value="rojo">Rojo</option>
+                        <option value="azul">Azul</option>
+                    </select>
+                </label>
+                <label>Cuello
+                    <select class="btn">
+                        <option value="24410">24/410</option>
+                        <option value="2415">24/415</option>
+                        <option value="20415">20/415</option>
+                    </select>
+                </label>
+            </div>
+            <div class="productoSeccion__comprar">
+                <button class="btn">Comprar</button>
+            </div>
+        </section>
+        <section class="newsletter">
+            <h2 class="letraTitulo">Inscríbete a nuestro newsletter</h2>
+            <p>Para enterarte de nuevos productos y noticias</p>
+            <form class="newsletterInscripcion" action="/newsletter_emails" method="post">
+                <input class="input" placeholder="correo electrónico" type="email">
+                <button class="btn callToAction" type="submit">Suscribirse</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="contactoFooter">
+            <p class="indicadorFooter indicador1">C.</p>
+                <p>300 784 9474 <br> 300 620 1860</p>
+            <p class="indicadorFooter">T.</p>
+                <p>604 596 8866 <br> 604 209 9886</p>
+            <p class="indicadorFooter">E.</p>
+                <p>comercial@optiformas.co</p>
+            <p class="indicadorFooter">D.</p>
+                <p>Carrera 64 # 35-35 <br> Itagüí - Antioquia, Colombia </p>
+        </div>
+
+        <img class="imgFavicon" src="../img/Favicon.png" alt="Favicon">
+
+        <div class="derechos">
+            <img class="imgFavicon_LM" src="../img/Logo_LM.png" alt="Logo LM">
+            <p class="derechosTexto">LMVW 2023</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

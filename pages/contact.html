@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="../img/Favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navbar__menu">
+                <li><a class="menuInactivo" href="../index.html">Inicio</a></li>
+                <li><a class="menuInactivo" href="./about.html">Sobre nosotros</a></li>
+                <li><a class="menuInactivo" href="./catalog.html">Catálogo</a></li>
+                <li><a class="menuActivo" href="./contact.html">Contacto</a></li>
+            </ul>
+
+            <a href="../index.html"><img class="imgFavicon" src="../img/Favicon.png" alt="Favicon"></a>
+
+            <div class="menu_secundario">
+                <input class="input" type="text" placeholder="Buscar">
+
+                <a href="#"><img class="imgCarrito" src="../img/carrito.png" alt="carrito"></a>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <div class="tituloContactos">
+            <h2 class="letraTitulo">Contáctanos</h2>
+            <p class="letraTitulo">Te responderemos en el menor tiempo posible. Puedes visitarnos en nuestras oficinas,
+                de lunes a viernes de 7:00 am a 5:30 pm y con gusto te atenderemos para hacer realidad cualquier sueño
+                que tengas</p>
+        </div>
+        <div class="contacto">
+            <div class="visitanos">
+                <iframe class="mapa"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.6961561717744!2d-75.63128548482055!3d6.171422395532021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e468183a16da993%3A0xfc8cd76b3a76d12!2sOptiformas%20S.A.S!5e0!3m2!1ses-419!2sco!4v1675603040369!5m2!1ses-419!2sco"
+                    width="600" height="550" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="formulario">
+                <form class="formulario__contacto">
+                    <div>
+                        <input class="input" type="text" placeholder="Nombre" required>
+                    </div>
+                    <div>
+                        <input class="input" type="email" placeholder="E-mail" required>
+                    </div>
+                    <div>
+                        <input type="text" class="input" placeholder="Empresa">
+                    </div>
+                    <div>
+                        <input type="tel" class="input" maxlength="10" required placeholder="Celular">
+                    </div>
+                    <div>
+                        <textarea class="input" name="comentarios" cols="30" rows="10" placeholder="Escriba aquí su mensaje..."></textarea>
+                    </div>
+                    <span class="terminosAcepto">
+                        <label for="terminos">Acepta la política de tratamiento de datos</label>
+                        Si<input type="radio" name="terminos" class="input">
+                        No<input type="radio" name="terminos" class="input">
+                    </span>
+                    <button class="btn btnformulario">Enviar mensaje</button>
+                </form>
+            </div>
+
+        </div>
+        <section class="newsletter">
+            <h2 class="letraTitulo">Inscríbete a nuestro newsletter</h2>
+            <p>Para enterarte de nuevos productos y noticias</p>
+            <form class="newsletterInscripcion" action="/newsletter_emails" method="post">
+                <input class="input" placeholder="correo electrónico" type="email">
+                <button class="btn callToAction" type="submit">Suscribirse</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="contactoFooter">
+            <p class="indicadorFooter indicador1">C.</p>
+            <p>300 784 9474 <br> 300 620 1860</p>
+            <p class="indicadorFooter">T.</p>
+            <p>604 596 8866 <br> 604 209 9886</p>
+            <p class="indicadorFooter">E.</p>
+            <p>comercial@optiformas.co</p>
+            <p class="indicadorFooter">D.</p>
+            <p>Carrera 64 # 35-35 <br> Itagüí - Antioquia, Colombia </p>
+        </div>
+
+        <img class="imgFavicon" src="../img/Favicon.png" alt="Favicon">
+
+        <div class="derechos">
+            <img class="imgFavicon_LM" src="../img/Logo_LM.png" alt="Logo LM">
+            <p class="derechosTexto">LMVW 2023</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
