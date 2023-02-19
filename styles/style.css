@@ -149,7 +149,6 @@ header{
     100% {    box-shadow: 0rem 0rem 0.8rem 0.1rem #00000010;}
 }
 
-
 /* FOOTER */
 footer{
     display: grid;
@@ -296,7 +295,7 @@ footer{
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 5rem;
-    justify-content: center;
+    justify-content: space-around;
     align-content: center;
 }
 .tarjeta{
@@ -530,9 +529,62 @@ footer{
     flex-wrap: wrap;  
 }
 
-/* .franjaProducto{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: space-between;
-} */
+/* MEDIA QUERYS */
+@media screen and (max-width: 803px) {
+/* NAVBAR */
+    .navbar__menu{
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    }
+}
+@media  screen and (max-width: 888px) {
+    /* FOOTER */
+    footer{
+    grid-template-columns: 2fr 0.3fr 0.5fr;
+    }
+}
+/* TABLET */
+@media screen and (max-width: 768px) {
+    /* GENERALES */
+    .letraTitulo{
+        margin: 0;
+    }
+    /* INICIO */
+    .textoInicio h3{
+        margin-top: 1rem;
+    }
+    .imgBot{
+        width: 50%;
+    }
+    /* TARJETAS */
+    .tarjetas{
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+    .tarjetasConjunto{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        gap: 0.5rem;
+    }
+    .tarjeta{
+        gap: 0;
+    }
+    .textoTarjeta{
+        gap: 0.3rem;
+    }
+    .btnProducto{
+        margin-top: 0.5rem;
+    }
+    .tarjetaImagen{
+        width: 60%;
+    }
+
+
+}
+
+/* PHONE */
+@media screen and (max-width: 480px) {
+
+}
