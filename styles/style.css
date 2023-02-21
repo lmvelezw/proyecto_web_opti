@@ -228,7 +228,7 @@ footer{
 }
 .inicio{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 0.5fr 1fr 0.5fr;
     grid-template-areas: 
     ". imginicio1 . . imginicio5 ."
@@ -335,17 +335,16 @@ footer{
 }
 /* SOBRE NOSOTROS */
 .sobreTexto{
-    margin-block: 5rem;
+    margin-block: 3rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.1fr 1fr 0.1fr 0.45fr 0.1fr 0.5fr 0.1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr 0.45fr 0.1fr 0.1fr 1fr;
     grid-template-areas: 
     "titulo1 titulo1"
     "imagen1 texto1"
     "titulo2 titulo2"
     "texto2 texto2"
-    "titulo3 titulo4"
-    "texto3 texto4"
+    "titulo3 titulo3"
     "titulo5 titulo5"
     "imagen5 imagen5";
     gap: 2rem;
@@ -376,16 +375,19 @@ footer{
 .texto2About{
     grid-area: texto2;
 }
-.titulo3About{
+.sobreMisionVision{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
     grid-area: titulo3;
     margin-bottom: 0;
+    margin-bottom: 3rem;
+    gap: 2rem;
 }
-.texto3About{
-    grid-area: texto3;
-}
-.titulo4About{
-    grid-area: titulo4;
-    margin-bottom: 0;
+.sobreMisionVision div{
+    flex: 1;
 }
 .texto4About{
     grid-area: texto4;
@@ -502,12 +504,18 @@ footer{
 /* CATALOGO */
 .catalogoCategorias__menu{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    margin-bottom: 3rem;
+    margin-block: 2rem;
+    gap: 1rem;
+    padding-inline: 2rem;
+}
+.catalogoCategorias__menu .btn{
+    margin: 0;
 }
 .catalogoCategorias{
-    margin-top: 5rem;
+    margin-top: 4rem;
 }
 .catalogoMenuImagenes{
     display: grid;
@@ -520,16 +528,31 @@ footer{
     display: flex;
     flex-direction: column;
     padding: 3rem;
-    
 }
 .catalogoTarjetas{
     grid-area: catalogo;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;  
 }
 
 /* MEDIA QUERYS */
+@media screen and (max-width: 1200px){
+    /* CONTACTO */
+    .tituloContactos{
+        padding: 2rem 3rem;
+    }
+    .contacto{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 1rem;
+    }
+    .mapa{
+        height: 300px;
+    }
+}
 @media screen and (max-width: 803px) {
 /* NAVBAR */
     .navbar__menu{
@@ -567,6 +590,7 @@ footer{
         align-items: center;
         justify-content: space-around;
         gap: 0.5rem;
+        margin-bottom: 1rem;
     }
     .tarjeta{
         gap: 0;
@@ -580,7 +604,33 @@ footer{
     .tarjetaImagen{
         width: 60%;
     }
-
+    /* SOBRE NOSOTROS */
+    .sobreTexto{
+        display: flex;
+        flex-direction: column;
+        margin-block: 2rem;
+    }
+    /* PRODUCTO */
+    .productoSeccion{
+        gap: 1rem;
+        margin-bottom: 3rem;
+    }
+    .tarjeta a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .catalogoTarjetas .tarjeta{
+        margin: 0.5rem 0.5rem;
+    }
+    .catalogoTarjetas{
+        margin-bottom: 3rem;
+        justify-content: space-around;
+    }
+    .filtroLateralCatalogo{
+        padding: 1rem 1rem 0 2rem;
+    }
 
 }
 
