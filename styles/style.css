@@ -519,11 +519,16 @@ footer{
 }
 .catalogoMenuImagenes{
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 6fr;
     grid-template-areas: 
     "filtro catalogo";
+    position: relative;
+    background: linear-gradient(#fafafa,#fafafa, #585858ac);
+
 }
 .filtroLateralCatalogo{
+    position: sticky;
+    top: 1rem;
     grid-area: filtro;
     display: flex;
     flex-direction: column;
@@ -588,7 +593,7 @@ footer{
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
         gap: 0.5rem;
         margin-bottom: 1rem;
     }
@@ -633,8 +638,58 @@ footer{
     }
 
 }
+@media screen and (max-width: 635px) {
+ /* FOOTER */
+    .contactoFooter{
+        justify-self: center;
+        gap: 0.5rem;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "contacto contacto"
+        "logo derechos";
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+        padding: 1rem 1rem;
+        margin-top: 1rem;
+    }
+    .derechos{
+        justify-self: center;
+    }
+    /* CONTACTO */
+    .mapa{
+        width: 85vw;
+    }
+}
 
 /* PHONE */
 @media screen and (max-width: 480px) {
-
+    /* NAVBAR */
+    .menu_secundario input{
+        display: none;
+    }
+    /* BOTONES */
+    .btn{
+        margin-block: 0.5rem;
+    }
+    /* LANDING */
+    .inicio{
+        margin-block: 2rem;
+    }
+    /* SOBRE NOSOTROS */
+    .sobreMisionVision{
+        display: flex;
+        flex-direction: column;
+    }
+    .imagen5About{
+        width: 100%;
+    }
+    /* CONTACTO */
+    .tituloContactos{
+        margin-top: 1rem;
+        padding-bottom: 0;
+    }
 }
