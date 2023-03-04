@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="shortcut icon" href="../img/Favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../styles/style.css">
 
@@ -13,264 +14,351 @@
 
 <body>
     <header>
-        <nav class="navbar">
-            <ul class="navbar__menu">
-                <li><a class="menuInactivo" href="../index.html">Inicio</a></li>
-                <li><a class="menuInactivo" href="./about.html">Sobre nosotros</a></li>
-                <li><a class="menuActivo" href="./catalog.html">Catálogo</a></li>
-                <li><a class="menuInactivo" href="./contact.html">Contacto</a></li>
-            </ul>
-
-            <a href="../index.html"><img class="imgFavicon" src="../img/Favicon.png" alt="Favicon"></a>
-
-            <div class="menu_secundario">
-                <input class="input" type="text" placeholder="Buscar">
-
-                <a href="#"><img class="imgCarrito" src="../img/carrito.png" alt="carrito"></a>
+<!-- Navbar -->
+        <nav class="navbar navbar-expand-lg rounded-4 mx-5 mt-3 p-0">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"><img class="imgFavicon" src="../img/Favicon.png" alt="Favicon"></a>
+              <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="menuInactivo nav-link" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="menuInactivo nav-link" href="./about.html">Sobre nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="menuActivo nav-link" href="./catalog.html">Catálogo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="menuInactivo nav-link" href="./contact.html">Contacto</a>
+                  </li>
+                </ul>
+                <div class="d-flex align-items-center justify-content-md-center gap-3 pe-4">
+                  <form class="d-flex align-items-center" role="search">
+                    <input class="form-control me-2 rounded-4 border-0 shadow-sm bg-transparent fs-6 fw-lighter" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success fs-6 my-3 py-1 px-3 me-4 rounded-5 border-0 shadow-sm" type="submit">Buscar</button>
+                  </form>
+                  <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#36c000" class="bi bi-cart-fill" viewBox="0 0 20 20">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                  </svg></a>
+                </div>
+              </div>
             </div>
-        </nav>
+          </nav> 
     </header>
     <main>
         <section class="catalogo">
-            
-            <div class="catalogoCategorias">
-                <h4 class="letraTitulo">Categorías</h4>
-                <ul class="catalogoCategorias__menu">
-                    <li class="btn">Alimento</li>
-                    <li class="btn">Cosmética</li>
-                    <li class="btn">Farmacéutica</li>
-                    <li class="btn">Industrial</li>
-                    <li class="btn">Tapas</li>
-                    <li class="btn">Tapones</li>
-                    <li class="btn">Especiales</li>
-                </ul>
+            <div class="catalogoCategorias d-flex flex-column align-items-center justify-content-center">
+                <h4 class="letraTitulo mt-5">Categorías</h4>
+
+                <div class="btn-group my-5" role="group" aria-label="Basic checkbox toggle button group">
+                    <input type="checkbox" class="btn-check m-2 " id="btncheck1" autocomplete="off">
+                    <label class="shadow  btn" for="btncheck1">Alimento</label>
+                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                    <label class="shadow btn" for="btncheck2">Cosmética</label>
+                    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                    <label class="shadow btn" for="btncheck3">Farmacéutica</label>
+                    <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+                    <label class="shadow btn" for="btncheck4">Industrial</label>
+                    <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off">
+                    <label class="shadow btn" for="btncheck5">Tapas</label>
+                    <input type="checkbox" class="btn-check" id="btncheck6" autocomplete="off">
+                    <label class="shadow btn" for="btncheck6">Tapones</label>
+                </div>                  
+
             </div>
         </section>
 
+<!-- Filtros -->
         <Section class="catalogoMenuImagenes">
             <div class="filtroLateralCatalogo">
                 <h4 class="letraTitulo">Filtros</h4>
-                <select class="btn">
-                    <option value="" disabled selected hidden>Cuello</option>
-                    <option value="24410">24/410</option>
-                    <option value="24415">24/415</option>
-                    <option value="20415">20/415</option>
-                    <option value="20410">20/410</option>
-                </select>
-                <select class="btn">Material
-                    <option value="" disabled selected hidden>Material</option>
-                    <option value="PET">PET</option>
-                    <option value="PEAD">PEAD</option>
-                    <option value="PP">PP</option>
-                    <option value="PVC">PVC</option>
-                </select>
-                <select class="btn">Capacidad
-                    <option value="" disabled selected hidden>Capacidad</option>
-                    <option value="50">1 mL - 50 mL</option>
-                    <option value="100">51 mL - 100 mL</option>
-                    <option value="500">101 mL - 500 mL</option>
-                    <option value="1000">501 mL - 1000 mL</option>
-                </select>
+                <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+                    <div class="btn-group border my-2" role="group">
+                      <button type="button" class="btn  dropdown-toggle shadow-none" data-bs-toggle="dropdown" aria-expanded="false">Cuello</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><option value="24410">24/410</option></a></li>
+                            <li><a class="dropdown-item" href="#"><option value="24415">24/415</option></a></li>
+                            <li><a class="dropdown-item" href="#"><option value="20415">20/415</option></a></li>
+                            <li><a class="dropdown-item" href="#"><option value="20410">20/410</option></a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group border my-2" role="group">
+                        <button type="button" class="btn  dropdown-toggle shadow-none" data-bs-toggle="dropdown" aria-expanded="false">Material</button>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#"><option value="PET">PET</option></a></li>
+                              <li><a class="dropdown-item" href="#"><option value="PEAD">PEAD</option></a></li>
+                              <li><a class="dropdown-item" href="#"><option value="PP">PP</option></a></li>
+                              <li><a class="dropdown-item" href="#"><option value="PVC">PVC</option></a></li>
+                          </ul>
+                      </div>
+                      <div class="btn-group border my-2" role="group">
+                        <button type="button" class="btn  dropdown-toggle shadow-none" data-bs-toggle="dropdown" aria-expanded="false">Capacidad</button>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#"><option value="50">1 mL - 50 mL</option></a></li>
+                              <li><a class="dropdown-item" href="#"><option value="100">51 mL - 100 mL</option></a></li>
+                              <li><a class="dropdown-item" href="#"><option value="500">101 mL - 500 mL</option></a></li>
+                              <li><a class="dropdown-item" href="#"><option value="1000">501 mL - 1000 mL</option></a></li>
+                          </ul>
+                      </div>
+                    
+                </div>
             </div>
+<!-- Catalogo -->
             <div class="catalogoTarjetas">
-                <span class="tarjeta">
-                    <a href="../pages/product.html">
-                        <img src="../img/catalogo/132.png" alt="Envase" class="tarjetaImagen">
-                        <p class="letraTitulo">Envase XXX</p>
+                <div class="card border-0 rounded-3 m-2 tarjetaCatalogo">
+                    <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
+                        <img src="../img/catalogo/132.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <div class="card-body">
+                            <p p class="card-link card-text fw-semibold ">Envase XXX</p>
+                        </div>
                     </a>
-                </span>
-                <span class="tarjeta">
-                    <a href="../pages/product.html">
-                        <img src="../img/catalogo/133.png" alt="Envase" class="tarjetaImagen">
-                        <p class="letraTitulo">Envase XXX</p>
+                </div>
+                <div class="card border-0 rounded-3 m-2 tarjeta">
+                    <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
+                        <img src="../img/catalogo/133.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <div class="card-body">
+                            <p p class="card-link card-text fw-semibold ">Envase XXX</p>
+                        </div>
                     </a>
-                </span>
-                <span class="tarjeta">
-                    <a href="../pages/product.html">
-                        <img src="../img/catalogo/134.png" alt="Envase" class="tarjetaImagen">
-                        <p class="letraTitulo">Envase XXX</p>
+                </div>
+                <div class="card border-0 rounded-3 m-2 tarjeta">
+                    <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
+                        <img src="../img/catalogo/134.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <div class="card-body">
+                            <p p class="card-link card-text fw-semibold ">Envase XXX</p>
+                        </div>
                     </a>
-                </span>
-                <span class="tarjeta">
-                    <a href="../pages/product.html">
-                        <img src="../img/catalogo/135.png" alt="Envase" class="tarjetaImagen">
-                        <p class="letraTitulo">Envase XXX</p>
+                </div>
+                <div class="card border-0 rounded-3 m-2 tarjeta">
+                    <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
+                        <img src="../img/catalogo/135.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <div class="card-body">
+                            <p p class="card-link card-text fw-semibold ">Envase XXX</p>
+                        </div>
                     </a>
-                </span>
-                <span class="tarjeta">
-                    <a href="../pages/product.html">
-                        <img src="../img/catalogo/136.png" alt="Envase" class="tarjetaImagen">
-                        <p class="letraTitulo">Envase XXX</p>
+                </div>
+                <div class="card border-0 rounded-3 m-2 tarjeta">
+                    <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
+                        <img src="../img/catalogo/136.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <div class="card-body">
+                            <p p class="card-link card-text fw-semibold ">Envase XXX</p>
+                        </div>
                     </a>
-                </span>
-                <span class="tarjeta">
-                    <a href="../pages/product.html">
-                        <img src="../img/catalogo/137.png" alt="Envase" class="tarjetaImagen">
-                        <p class="letraTitulo">Envase XXX</p>
+                </div>
+                <div class="card border-0 rounded-3 m-2 tarjeta">
+                    <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
+                        <img src="../img/catalogo/137.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <div class="card-body">
+                            <p p class="card-link card-text fw-semibold ">Envase XXX</p>
+                        </div>
                     </a>
-                </span>
-                <span class="tarjeta">
-                    <a href="../pages/product.html">
-                        <img src="../img/catalogo/138.png" alt="Envase" class="tarjetaImagen">
-                        <p class="letraTitulo">Envase XXX</p>
+                </div>
+                <div class="card border-0 rounded-3 m-2 tarjeta">
+                    <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
+                        <img src="../img/catalogo/138.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <div class="card-body">
+                            <p p class="card-link card-text fw-semibold ">Envase XXX</p>
+                        </div>
                     </a>
-                </span>
-                <span class="tarjeta">
-                    <a href="../pages/product.html">
-                        <img src="../img/catalogo/139.png" alt="Envase" class="tarjetaImagen">
-                        <p class="letraTitulo">Envase XXX</p>
+                </div>
+                <div class="card border-0 rounded-3 m-2 tarjeta">
+                    <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
+                        <img src="../img/catalogo/139.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <div class="card-body">
+                            <p p class="card-link card-text fw-semibold ">Envase XXX</p>
+                        </div>
                     </a>
-                </span>
-                <span class="tarjeta">
-                    <a href="../pages/product.html">
-                        <img src="../img/catalogo/140.png" alt="Envase" class="tarjetaImagen">
-                        <p class="letraTitulo">Envase XXX</p>
+                </div>
+                <div class="card border-0 rounded-3 m-2 tarjeta">
+                    <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
+                        <img src="../img/catalogo/140.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <div class="card-body">
+                            <p p class="card-link card-text fw-semibold ">Envase XXX</p>
+                        </div>
                     </a>
-                </span>
-                <span class="tarjeta">
-                    <a href="../pages/product.html">
-                        <img src="../img/catalogo/141.png" alt="Envase" class="tarjetaImagen">
-                        <p class="letraTitulo">Envase XXX</p>
+                </div>
+                <div class="card border-0 rounded-3 m-2 tarjeta">
+                    <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
+                        <img src="../img/catalogo/141.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <div class="card-body">
+                            <p p class="card-link card-text fw-semibold ">Envase XXX</p>
+                        </div>
                     </a>
-                </span>
-                <span class="tarjeta">
-                    <a href="../pages/product.html">
-                        <img src="../img/catalogo/132.png" alt="Envase" class="tarjetaImagen">
-                        <p class="letraTitulo">Envase XXX</p>
+                </div>
+                <div class="card border-0 rounded-3 m-2 tarjeta">
+                    <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
+                        <img src="../img/catalogo/142.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <div class="card-body">
+                            <p p class="card-link card-text fw-semibold ">Envase XXX</p>
+                        </div>
                     </a>
-                </span>
-                <span class="tarjeta">
-                    <a href="../pages/product.html">
-                        <img src="../img/catalogo/142.png" alt="Envase" class="tarjetaImagen">
-                        <p class="letraTitulo">Envase XXX</p>
+                </div>
+                <div class="card border-0 rounded-3 m-2 tarjeta">
+                    <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
+                        <img src="../img/catalogo/143.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <div class="card-body">
+                            <p p class="card-link card-text fw-semibold ">Envase XXX</p>
+                        </div>
                     </a>
-                </span>
-                <span class="tarjeta">
-                    <a href="../pages/product.html">
-                        <img src="../img/catalogo/143.png" alt="Envase" class="tarjetaImagen">
-                        <p class="letraTitulo">Envase XXX</p>
+                </div>
+                <div class="card border-0 rounded-3 m-2 tarjeta">
+                    <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
+                        <img src="../img/catalogo/144.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <div class="card-body">
+                            <p p class="card-link card-text fw-semibold ">Envase XXX</p>
+                        </div>
                     </a>
-                </span>
-                <span class="tarjeta">
-                    <a href="../pages/product.html">
-                        <img src="../img/catalogo/144.png" alt="Envase" class="tarjetaImagen">
-                        <p class="letraTitulo">Envase XXX</p>
+                </div>
+                <div class="card border-0 rounded-3 m-2 tarjeta">
+                    <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
+                        <img src="../img/catalogo/145.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <div class="card-body">
+                            <p p class="card-link card-text fw-semibold ">Envase XXX</p>
+                        </div>
                     </a>
-                </span>
-                <span class="tarjeta">
-                    <a href="../pages/product.html">
-                        <img src="../img/catalogo/145.png" alt="Envase" class="tarjetaImagen">
-                        <p class="letraTitulo">Envase XXX</p>
+                </div>
+                <div class="card border-0 rounded-3 m-2 tarjeta">
+                    <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
+                        <img src="../img/catalogo/146.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <div class="card-body">
+                            <p p class="card-link card-text fw-semibold ">Envase XXX</p>
+                        </div>
                     </a>
-                </span>
-                <span class="tarjeta">
-                    <a href="../pages/product.html">
-                        <img src="../img/catalogo/146.png" alt="Envase" class="tarjetaImagen">
-                        <p class="letraTitulo">Envase XXX</p>
+                </div>
+                <div class="card border-0 rounded-3 m-2 tarjeta">
+                    <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
+                        <img src="../img/catalogo/147.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <div class="card-body">
+                            <p p class="card-link card-text fw-semibold ">Envase XXX</p>
+                        </div>
                     </a>
-                </span>
-                <span class="tarjeta">
-                    <a href="../pages/product.html">
-                        <img src="../img/catalogo/147.png" alt="Envase" class="tarjetaImagen">
-                        <p class="letraTitulo">Envase XXX</p>
+                </div>
+                <div class="card border-0 rounded-3 m-2 tarjeta">
+                    <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
+                        <img src="../img/catalogo/148.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <div class="card-body">
+                            <p p class="card-link card-text fw-semibold ">Envase XXX</p>
+                        </div>
                     </a>
-                </span>
-                <span class="tarjeta">
-                    <a href="../pages/product.html">
-                        <img src="../img/catalogo/148.png" alt="Envase" class="tarjetaImagen">
-                        <p class="letraTitulo">Envase XXX</p>
+                </div>
+                <div class="card border-0 rounded-3 m-2 tarjeta">
+                    <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
+                        <img src="../img/catalogo/149.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <div class="card-body">
+                            <p p class="card-link card-text fw-semibold ">Envase XXX</p>
+                        </div>
                     </a>
-                </span>
-                <span class="tarjeta">
-                    <a href="../pages/product.html">
-                        <img src="../img/catalogo/149.png" alt="Envase" class="tarjetaImagen">
-                        <p class="letraTitulo">Envase XXX</p>
+                </div>
+                <div class="card border-0 rounded-3 m-2 tarjeta">
+                    <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
+                        <img src="../img/catalogo/150.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <div class="card-body">
+                            <p p class="card-link card-text fw-semibold ">Envase XXX</p>
+                        </div>
                     </a>
-                </span>
-                <span class="tarjeta">
-                    <a href="../pages/product.html">
-                        <img src="../img/catalogo/150.png" alt="Envase" class="tarjetaImagen">
-                        <p class="letraTitulo">Envase XXX</p>
+                </div>
+                <div class="card border-0 rounded-3 m-2 tarjeta">
+                    <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
+                        <img src="../img/catalogo/151.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <div class="card-body">
+                            <p p class="card-link card-text fw-semibold ">Envase XXX</p>
+                        </div>
                     </a>
-                </span>
-                <span class="tarjeta">
-                    <a href="../pages/product.html">
-                        <img src="../img/catalogo/151.png" alt="Envase" class="tarjetaImagen">
-                        <p class="letraTitulo">Envase XXX</p>
+                </div>
+                <div class="card border-0 rounded-3 m-2 tarjeta">
+                    <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
+                        <img src="../img/catalogo/152.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <div class="card-body">
+                            <p p class="card-link card-text fw-semibold ">Envase XXX</p>
+                        </div>
                     </a>
-                </span>
-                <span class="tarjeta">
-                    <a href="../pages/product.html">
-                        <img src="../img/catalogo/152.png" alt="Envase" class="tarjetaImagen">
-                        <p class="letraTitulo">Envase XXX</p>
+                </div>
+                <div class="card border-0 rounded-3 m-2 tarjeta">
+                    <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
+                        <img src="../img/catalogo/153.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <div class="card-body">
+                            <p p class="card-link card-text fw-semibold ">Envase XXX</p>
+                        </div>
                     </a>
-                </span>
-                <span class="tarjeta">
-                    <a href="../pages/product.html">
-                        <img src="../img/catalogo/153.png" alt="Envase" class="tarjetaImagen">
-                        <p class="letraTitulo">Envase XXX</p>
+                </div>
+                <div class="card border-0 rounded-3 m-2 tarjeta">
+                    <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
+                        <img src="../img/catalogo/154.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <div class="card-body">
+                            <p p class="card-link card-text fw-semibold ">Envase XXX</p>
+                        </div>
                     </a>
-                </span>
-                <span class="tarjeta">
-                    <a href="../pages/product.html">
-                        <img src="../img/catalogo/154.png" alt="Envase" class="tarjetaImagen">
-                        <p class="letraTitulo">Envase XXX</p>
+                </div>
+                <div class="card border-0 rounded-3 m-2 tarjeta">
+                    <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
+                        <img src="../img/catalogo/155.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <div class="card-body">
+                            <p p class="card-link card-text fw-semibold ">Envase XXX</p>
+                        </div>
                     </a>
-                </span>
-                <span class="tarjeta">
-                    <a href="../pages/product.html">
-                        <img src="../img/catalogo/155.png" alt="Envase" class="tarjetaImagen">
-                        <p class="letraTitulo">Envase XXX</p>
-                    </a>
-                </span>
-
+                </div>
 
             </div>
         </Section>
-
-
-
-        <section class="tarjetas">
+<!-- Sección tarjetas -->
+        <section class="tarjetas d-flex flex-column justify-content-md-center">
             <div>
-                <h2 class="letraTitulo">Productos recomendados</h2>
+                <h2 class="letraTitulo tituloTarjetas pt-5 mt-5">Productos recomendados</h2>
             </div>
-            <div class="tarjetasConjunto">
-                <div class="tarjeta">
-                    <img src="../img/catalogo/132.png" alt="Envase" class="tarjetaImagen">
-                    <div class="textoTarjeta">
-                        <h3 class="letraTitulo">Envase XXX</h3>
-                        <p>Envase redondo en PEAD</p>
-                        <button class="btnProducto"><a href="../pages/product.html">Ver producto</a></button>
+            <div class="row row-cols-1 row-cols-md-4 row-cols-sm-2 g-5 m-5 d-flex text-center">
+                <div class="col">
+                  <div class="card h-100 rounded-4 tarjeta">
+                    <img src="../img/catalogo/132.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen pt-3">
+                    <div class="card-body">
+                      <h5 class="card-title">Envase XXX</h5>
+                      <p class="card-text">Envase redondo en PEAD</p>
                     </div>
+                    <div class=" mb-5">
+                        <button class="btn rounded-3 px-3 btnProducto"><a class="text-white" href="./product.html" >Ver producto</a></button>
+                    </div> 
+                  </div>
                 </div>
-                <div class="tarjeta">
-                    <img src="../img/catalogo/133.png" alt="Envase" class="tarjetaImagen">
-                    <div class="textoTarjeta">
-                        <h3 class="letraTitulo">Envase XXX</h3>
-                        <p>Envase redondo en PEAD</p>
-                        <button class="btnProducto"><a href="../pages/product.html">Ver producto</a></button>
+                <div class="col">
+                  <div class="card h-100 rounded-4 tarjeta">
+                    <img src="../img/catalogo/133.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen pt-3">
+                    <div class="card-body">
+                      <h5 class="card-title">Envase XXX</h5>
+                      <p class="card-text">Envase redondo en PP</p>
                     </div>
+                    <div class=" mb-5">
+                     <button class="btn rounded-3 px-3 btnProducto"><a class="text-white" href="./product.html" >Ver producto</a></button>
+                    </div> 
+                  </div>
                 </div>
-                <div class="tarjeta">
-                    <img src="../img/catalogo/134.png" alt="Envase" class="tarjetaImagen">
-                    <div class="textoTarjeta">
-                        <h3 class="letraTitulo">Envase XXX</h3>
-                        <p>Envase redondo en PVC</p>
-                        <button class="btnProducto"><a href="../pages/product.html">Ver producto</a></button>
+                <div class="col">
+                  <div class="card h-100 rounded-4 tarjeta">
+                    <img src="../img/catalogo/134.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen pt-3">
+                    <div class="card-body">
+                      <h5 class="card-title">Envase XXX</h5>
+                      <p class="card-text">Envase redondo en PVC</p>
                     </div>
+                    <div class=" mb-5">
+                        <button class="btn rounded-3 px-3 btnProducto"><a class="text-white" href="./product.html" >Ver producto</a></button>
+                    </div> 
+                  </div>
                 </div>
-                <div class="tarjeta">
-                    <img src="../img/catalogo/135.png" alt="Envase" class="tarjetaImagen">
-                    <div class="textoTarjeta">
-                        <h3 class="letraTitulo">Envase XXX</h3>
-                        <p>Envase redondo en PP</p>
-                        <button class="btnProducto"><a href="../pages/product.html">Ver producto</a></button>
+                <div class="col">
+                  <div class="card h-100 rounded-4 tarjeta">
+                    <img src="../img/catalogo/135.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen pt-3">
+                    <div class="card-body">
+                      <h5 class="card-title">Envase XXX</h5>
+                      <p class="card-text">Envase redondo en PEAD</p>
                     </div>
+                    <div class=" mb-5">
+                        <button class="btn rounded-3 px-3 btnProducto"><a class="text-white" href="./product.html" >Ver producto</a></button>
+                    </div> 
+                  </div>
                 </div>
             </div>
-            <button class="btn" type="button"><a href="../pages/catalog.html">Mira nuestro catálogo aquí</a></button>
-
-
         </section>
     </main>
     <footer>
@@ -293,6 +381,6 @@
         </div>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
-
 </html>

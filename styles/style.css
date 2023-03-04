@@ -3,9 +3,6 @@
 
 /* GENERICOS */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: 'Quicksand','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 body{
@@ -14,9 +11,7 @@ body{
 }
 a {
     text-decoration: none;
-}
-ul{
-    list-style-type: none;
+    color: #182868;
 }
 /* TEXTO TITULOS */
 .letraTitulo{
@@ -24,7 +19,6 @@ ul{
     letter-spacing: 0.3rem;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 2rem;
 }
 /* INPUTS */
 .input{
@@ -39,116 +33,62 @@ ul{
 }
 /* BOTONES */
 .btn{
-    border: none;
-    padding: 1rem 2rem;
-    border-radius: 1rem;
-    font-size: 0.85rem;
     box-shadow: 0 0 0.5rem 0.1rem #18286815 ;
-    background-color: #ffffff46;
-    font-weight: 600;
-    margin-block: 1.5rem;
     transition: all 0.3s ease-out;
     cursor: pointer;
 }
 .btn:hover{
-    box-shadow: 0 0 3rem 0.2rem #36c0006b;
-    background-color: #36c00027;
+    box-shadow: 0 0 3rem 0.2rem #36c000;
+    background-color: #36c000;
     font-weight: 700;
     transform: scale(1.03);
+    color: #182868;
+}
+.btn::selection{
+    border: none;
 }
 .btnProducto{
-    border: none;
-    padding: 0.5rem;
-    border-radius: 1rem;
-    margin-top: 2.5rem;
     background-color: #182868;
     transition: all 0.2s ease-out;
 }
-.btnProducto:hover{
-    box-shadow: 0 0 0.7rem 0.2rem #36c0006b;
-    background-color: #36c00027;
-    transform: scale(1.03);
-    cursor: pointer;
-}
-.btnProducto a{
-    color: white;
-    font-weight: 600;
-}
 .callToAction{
     box-shadow: 0 0 2rem 0.2rem #36c0006b;
-    background-color: #36c0006b;
+    background-color: #36c000;
 }
 /* HEADER */
 header{
-    display: grid;
     position: sticky;
-    top: 1rem;
+    top: 1.2rem;
+    z-index: 2;
 }
 /* NAVBAR */
 .navbar{
-    display: grid;
-    grid-template-columns: 1fr 0.3fr 1fr;
-    grid-template-areas: "navbar logo search";
-    align-items: center;
-    justify-items: center;
-    font-size: 0.85rem;
-    backdrop-filter: blur(30px);
-    padding: 0.2rem 2rem;
-    margin: 1rem 2rem;
-    border-radius: 1rem;
+    backdrop-filter: blur(25px);
     box-shadow: 0rem 0rem 0.8rem 0.1rem #00000010;
     animation: respirafondo 4s ease infinite;
-    z-index: 1;
+    transition: all 0.5s ease;
 }
-.navbar__menu{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: start;
-    gap: 1rem ;
-    grid-area: navbar;
-    justify-self: start;
+.navbar:hover{
+    background-color: #ffffffa9;
 }
 .menuActivo{
     color: #36c000;
     font-weight: 700;
 }
-.menuInactivo {
-    color: #767676;
+.menuInactivo{
+    transition: color 0.5s ease;
 }
 .menuInactivo:hover{
     color: #36c000;
-    font-weight: 700;
-    transition: color 0.5s ease;
 }
 .imgFavicon {
     width: 5rem;
-    grid-area: logo;
 }
-.menu_secundario{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: end;
-    align-items: center;
-    gap: 1rem;
-    grid-area: search;
-    justify-self: end;
-}
-.imgCarrito{
-    height: 1.5rem;
-}
-.imgCarrito:hover{
-    transition: height 0.5s ease;
-    height: 1.75rem;
-}
-
 @keyframes respirafondo {
     0% {    box-shadow: 0rem 0rem 0.8rem 0.1rem #00000010;}
     50% {    box-shadow: 0rem 0rem 0.8rem 0.1rem #31c15020;}
     100% {    box-shadow: 0rem 0rem 0.8rem 0.1rem #00000010;}
 }
-
 /* FOOTER */
 footer{
     display: grid;
@@ -166,7 +106,6 @@ footer{
     bottom: 0rem;
     font-size: 0.85rem;
     animation: respirafondo 4s ease infinite;
-
 }
 .contactoFooter{
     grid-area: contacto;
@@ -224,7 +163,6 @@ footer{
 .landing{
     padding-bottom: 5rem;
     background: linear-gradient(#fafafa,#fafafa, #585858ac);
-
 }
 .inicio{
     display: grid;
@@ -283,55 +221,22 @@ footer{
 }
 .tarjetas{
     background: linear-gradient(#585858ac, #fafafa);
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-items: center;
-    align-items: center;
-    padding: 5rem 0 ;
-}
-.tarjetasConjunto{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-bottom: 5rem;
-    justify-content: space-around;
-    align-content: center;
 }
 .tarjeta{
     background: linear-gradient(#ffffff, #e3e3e364);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    padding: 1.5rem;
-    margin: 2rem 1rem;
-    border-radius: 1rem;
     box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.10);
     transition: all 0.3s ease;
 }
-.textoTarjeta, .productoCompleto{
-    display: flex;
-    flex-direction: column;
-}
 .tarjetaImagen{
     max-width: 10rem;
-    z-index: 1;
+    align-self: center;
 }
 .tarjeta:hover{
     transform: scale(1.1);
-    z-index: 0;
 }
 /* NEWSLETTER SECTION */
-.newsletter, .newsletterInscripcion{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin: 2rem;
-    align-items: center;
-    justify-content: center;
+.newsletter{
+    margin-block: 6rem;
 }
 /* SOBRE NOSOTROS */
 .sobreTexto{
@@ -511,12 +416,6 @@ footer{
     gap: 1rem;
     padding-inline: 2rem;
 }
-.catalogoCategorias__menu .btn{
-    margin: 0;
-}
-.catalogoCategorias{
-    margin-top: 4rem;
-}
 .catalogoMenuImagenes{
     display: grid;
     grid-template-columns: 1fr 6fr;
@@ -524,7 +423,6 @@ footer{
     "filtro catalogo";
     position: relative;
     background: linear-gradient(#fafafa,#fafafa, #585858ac);
-
 }
 .filtroLateralCatalogo{
     position: sticky;
@@ -540,9 +438,13 @@ footer{
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;  
 }
-
+.tarjetaCatalogo{
+    transition: all 0.3s ease;
+}
+.tarjetaCatalogo{
+    transform: scale(1.02);
+}
 /* MEDIA QUERYS */
 @media screen and (max-width: 1200px){
     /* CONTACTO */
@@ -556,13 +458,6 @@ footer{
     }
     .mapa{
         height: 300px;
-    }
-}
-@media screen and (max-width: 803px) {
-/* NAVBAR */
-    .navbar__menu{
-    gap: 0.5rem;
-    font-size: 0.8rem;
     }
 }
 @media  screen and (max-width: 888px) {
@@ -584,31 +479,6 @@ footer{
     .imgBot{
         width: 50%;
     }
-    /* TARJETAS */
-    .tarjetas{
-        gap: 0.5rem;
-        padding: 1rem;
-    }
-    .tarjetasConjunto{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        gap: 0.5rem;
-        margin-bottom: 1rem;
-    }
-    .tarjeta{
-        gap: 0;
-    }
-    .textoTarjeta{
-        gap: 0.3rem;
-    }
-    .btnProducto{
-        margin-top: 0.5rem;
-    }
-    .tarjetaImagen{
-        width: 60%;
-    }
     /* SOBRE NOSOTROS */
     .sobreTexto{
         display: flex;
@@ -620,12 +490,6 @@ footer{
         gap: 1rem;
         margin-bottom: 3rem;
     }
-    .tarjeta a{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
     .catalogoTarjetas .tarjeta{
         margin: 0.5rem 0.5rem;
     }
@@ -636,7 +500,6 @@ footer{
     .filtroLateralCatalogo{
         padding: 1rem 1rem 0 2rem;
     }
-
 }
 @media screen and (max-width: 635px) {
  /* FOOTER */
@@ -664,13 +527,8 @@ footer{
         width: 85vw;
     }
 }
-
 /* PHONE */
 @media screen and (max-width: 480px) {
-    /* NAVBAR */
-    .menu_secundario input{
-        display: none;
-    }
     /* BOTONES */
     .btn{
         margin-block: 0.5rem;
