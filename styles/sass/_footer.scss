@@ -1,0 +1,70 @@
+@import "base";
+
+// FOOTER
+footer{
+    display: grid;
+    grid-template-columns: 1fr 0.3fr 1fr;
+    grid-template-areas: "contacto logo derechos";
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 3rem 2rem 1.5rem 2rem;
+    border-radius: 1rem;
+    // background-color: #c8c8c846;
+    box-shadow: 0rem 0rem 1rem 0rem #c8c8c897;
+    padding: 1rem 2rem;
+    font-size: 0.85rem;
+    animation: respirafondo 4s ease infinite;
+
+    .contactoFooter{
+        grid-area: contacto;
+        justify-self: start;
+        display: grid;
+        grid-template-columns: 0.5fr 5fr 0.5fr 5fr;
+        grid-template-areas: 
+            "indicador1 texto1 indicador2 texto2"
+            "indicador3 texto3 indicador4 texto4";
+        gap: 0.25rem;
+
+            .indicador1{
+                grid-area: indicador1;
+            }
+            .indicador2{
+                grid-area: indicador2;
+            }
+            .indicador3{
+                grid-area: indicador3;
+            }
+            .indicador4{
+                grid-area: indicador4;
+            }
+            .textoIndicador1{
+                grid-area: texto1;
+            }
+            .textoIndicador2{
+                grid-area: texto2;
+            }
+            .textoIndicador3{
+                grid-area: texto3;
+            }
+            .textoIndicador4{
+                grid-area: texto4;
+            }   
+            .indicadorFooter {
+                color: $secondary-color;
+                font-weight: 700;
+            }
+    }
+    .derechos{
+        grid-area: derechos;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: end;
+    
+        .derechosTexto{
+            font-size: 0.5rem;
+            font-weight: 100;
+        }
+    }
+}

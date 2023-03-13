@@ -1,0 +1,42 @@
+// CONTACTO
+
+.tituloContactos{
+    padding: 2rem 8rem;
+    margin-top: 3rem;
+}
+.contacto,
+.terminosAcepto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 2rem;
+    gap: 1rem;
+}
+.contacto{
+    border-bottom: 2px dotted #1828685d;
+    margin-bottom: 3rem;
+    padding-bottom: 8rem;
+
+    .mapa{
+        border-radius: 1rem;
+    }
+}
+.formulario{
+    &__contacto{
+        display: flex;
+        flex-direction: column;
+    }
+    &__contacto div{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1.5rem;
+        text-align: left;
+    }
+
+    .btnformulario{
+        align-self: flex-end;
+    }
+}

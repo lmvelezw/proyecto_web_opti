@@ -1,0 +1,29 @@
+@import "base";
+
+/* BOTONES */
+.btn{
+    box-shadow: 0 0 0.5rem 0.1rem #18286815 ;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+
+    &:hover{
+        box-shadow: 0 0 3rem 0.2rem $secondary-color;
+        background-color: $secondary-color;
+        font-weight: 700;
+        transform: scale(1.03);
+        color: $main-color;
+    }
+    &::selection{
+        border: none;
+    }
+}
+
+.btnProducto{
+    background-color: $main-color;
+    transition: all 0.2s ease-out;
+}
+.callToAction{
+    box-shadow: 0 0 2rem 0.2rem #36c0006b;
+    background-color: $secondary-color;
+    font-weight: light;
+}

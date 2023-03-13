@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&display=swap');
+
+// Generales
+* {
+    font-family: 'Quicksand','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #fafafa;
+    color: #182868
+}
+
+a {
+    text-decoration: none;
+    color: #182868;
+}
+
+// TEXTO TITULOS
+.letraTitulo{
+    font-family: 'Arsenal', sans-serif;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+// Variables
+
+$main-color: #182868;
+$secondary-color: #36c000;

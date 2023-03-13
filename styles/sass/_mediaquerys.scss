@@ -1,0 +1,128 @@
+/* MEDIA QUERYS */
+@media screen and (max-width: 1200px){
+    /* CONTACTO */
+    .tituloContactos{
+        padding: 2rem 3rem;
+    }
+    .contacto{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 1rem;
+    }
+    .mapa{
+        height: 300px;
+    }
+}
+@media  screen and (max-width: 888px) {
+    /* FOOTER */
+    footer{
+    grid-template-columns: 2fr 0.3fr 0.5fr;
+    }
+    .productoSeccion{
+        grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr 1fr 0.1fr;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    "titulo titulo titulo "
+    "usos descripcion  caracteristicas "
+    ".  imagen  ."
+    ". comprar .";
+    }
+}
+/* TABLET */
+@media screen and (max-width: 768px) {
+    /* GENERALES */
+    .letraTitulo{
+        margin: 0;
+    }
+    /* INICIO */
+    .textoInicio h3{
+        margin-top: 1rem;
+    }
+    .imgBot{
+        width: 50%;
+    }
+    /* SOBRE NOSOTROS */
+    .sobreTexto{
+        display: flex;
+        flex-direction: column;
+        margin-block: 2rem;
+    }
+    /* PRODUCTO */
+    .productoSeccion{
+        gap: 1rem;
+        margin-bottom: 3rem;
+    }
+    .catalogoTarjetas .tarjeta{
+        margin: 0.5rem 0.5rem;
+    }
+    .catalogoTarjetas{
+        margin-bottom: 3rem;
+        justify-content: space-around;
+    }
+    .filtroLateralCatalogo{
+        padding: 1rem 1rem 0 2rem;
+    }
+}
+@media screen and (max-width: 635px) {
+ /* FOOTER */
+    .contactoFooter{
+        justify-self: center;
+        gap: 0.5rem;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "contacto contacto"
+        "logo derechos";
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+        padding: 1rem 1rem;
+        margin-top: 1rem;
+    }
+    .derechos{
+        justify-self: center;
+    }
+    /* CONTACTO */
+    .mapa{
+        width: 85vw;
+    }
+    /* PRODUCTO */
+    .productoSeccion{
+        grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr 1fr 0.1fr;
+    grid-gap: 0.5rem;
+    grid-template-areas: 
+    "titulo titulo"
+    "descripcion descripcion"
+    "usos caracteristicas "
+    "imagen imagen  "
+    "comprar comprar ";
+    }
+}
+/* PHONE */
+@media screen and (max-width: 480px) {
+    /* BOTONES */
+    .btn{
+        margin-block: 0.5rem;
+    }
+    /* LANDING */
+    .inicio{
+        margin-block: 2rem;
+    }
+    /* SOBRE NOSOTROS */
+    .sobreMisionVision{
+        display: flex;
+        flex-direction: column;
+    }
+    .imagen5About{
+        width: 100%;
+    }
+    /* CONTACTO */
+    .tituloContactos{
+        margin-top: 1rem;
+        padding-bottom: 0;
+    }
+}

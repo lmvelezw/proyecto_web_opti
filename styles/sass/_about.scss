@@ -1,0 +1,82 @@
+
+
+/* SOBRE NOSOTROS */
+.sobreTexto{
+    margin-block: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 0.1fr 0.45fr 0.1fr 0.1fr 1fr;
+    grid-template-areas: 
+    "titulo1 titulo1"
+    "imagen1 texto1"
+    "titulo2 titulo2"
+    "texto2 texto2"
+    "titulo3 titulo3"
+    "titulo5 titulo5"
+    "imagen5 imagen5";
+    gap: 2rem;
+    padding: 2rem;
+    justify-items: center;
+    align-items: center;
+}
+.parrafos{
+    text-align: justify;
+    text-justify: inter-word;
+}
+.titulo1About{
+    grid-area: titulo1;
+    margin-bottom: 0;
+}
+.imgEmpresa{
+    border-radius: 1rem;
+    width: 100%;
+    grid-area: imagen1;
+}
+.texto1About{
+    grid-area: texto1;
+}
+.titulo2About{
+    grid-area: titulo2;
+    margin-bottom: 0;
+}
+.texto2About{
+    grid-area: texto2;
+}
+.sobreMisionVision{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    grid-area: titulo3;
+    margin-bottom: 0;
+    margin-bottom: 3rem;
+    gap: 2rem;
+}
+.sobreMisionVision div{
+    flex: 1;
+}
+.texto4About{
+    grid-area: texto4;
+}
+.titulo5About{
+    grid-area: titulo5;
+    margin-bottom: 0;
+}
+.imagen5About{
+    grid-area: imagen5;
+}
+.textoProminente{
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: #182868;
+    color: #fafafa;
+    height: 100%;
+}
+.textoNuestraHistoria{
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: #c8c8c860;
+    box-shadow: 0rem 0rem 1rem 0rem #c8c8c897;
+    height: 100%;
+}

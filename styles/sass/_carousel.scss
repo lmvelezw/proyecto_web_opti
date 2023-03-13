@@ -1,0 +1,18 @@
+/* TARJETAS PRODUCTOS */
+.tituloTarjetas{
+    color: #fafafa;
+    text-shadow: #00000035 0.2rem 0.2rem 0.2rem;
+}
+.tarjetas{
+    background: linear-gradient(#585858ac, #fafafa);
+
+    .tarjeta{
+        background: linear-gradient(#ffffff, #e3e3e364);
+        box-shadow: 0 0 3rem 1rem rgba(0, 0, 0, 0.10);
+        transition: all 0.3s ease;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}

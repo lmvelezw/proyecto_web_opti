@@ -1,0 +1,39 @@
+/* CATALOGO */
+.catalogoCategorias__menu{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-block: 2rem;
+    gap: 1rem;
+    padding-inline: 2rem;
+}
+.catalogoMenuImagenes{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-areas: 
+    "filtro catalogo";
+    position: relative;
+    background: linear-gradient(#fafafa,#fafafa, #585858ac);
+}
+.filtroLateralCatalogo{
+    position: sticky;
+    top: 1rem;
+    grid-area: filtro;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+.catalogoTarjetas{
+    grid-area: catalogo;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.tarjetaCatalogo{
+    transition: all 0.3s ease;
+}
+.tarjetaCatalogo{
+    transform: scale(1.02);
+}
