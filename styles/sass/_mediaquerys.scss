@@ -13,13 +13,13 @@
         height: 300px;
     }
 }
-@media  screen and (max-width: 888px) {
+@media screen and (max-width: 888px) {
     /* FOOTER */
     footer{
     grid-template-columns: 2fr 0.3fr 0.5fr;
     }
     .productoSeccion{
-        grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 0.1fr 0.1fr 1fr 0.1fr;
     grid-gap: 1rem;
     grid-template-areas: 
@@ -27,6 +27,15 @@
     "usos descripcion  caracteristicas "
     ".  imagen  ."
     ". comprar .";
+    }
+     /* SOBRE NOSOTROS */  
+    .sobreTexto{
+        display: flex;
+        flex-direction: column;
+        margin-block: 2rem;
+    }
+    .imagen5About{
+        width: 100%;
     }
 }
 /* TABLET */
@@ -43,10 +52,8 @@
         width: 50%;
     }
     /* SOBRE NOSOTROS */
-    .sobreTexto{
-        display: flex;
+    .sobreTexto .sobreMisionVision {
         flex-direction: column;
-        margin-block: 2rem;
     }
     /* PRODUCTO */
     .productoSeccion{
@@ -111,14 +118,6 @@
     /* LANDING */
     .inicio{
         margin-block: 2rem;
-    }
-    /* SOBRE NOSOTROS */
-    .sobreMisionVision{
-        display: flex;
-        flex-direction: column;
-    }
-    .imagen5About{
-        width: 100%;
     }
     /* CONTACTO */
     .tituloContactos{

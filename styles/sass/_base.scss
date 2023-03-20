@@ -27,3 +27,14 @@ a {
 
 $main-color: #182868;
 $secondary-color: #36c000;
+$secondary-color-fade: #36c00075;
+
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+p::selection {
+    color: $main-color;
+    background: $secondary-color;
+}
