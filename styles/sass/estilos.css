@@ -42,42 +42,6 @@ p::selection {
   background: #36c000;
 }
 
-* {
-  font-family: "Quicksand", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
-body {
-  background-color: #fafafa;
-  color: #182868;
-}
-
-a {
-  text-decoration: none;
-  color: #182868;
-}
-
-.letraTitulo {
-  font-family: "Arsenal", sans-serif;
-  letter-spacing: 0.3rem;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, p::-moz-selection {
-  color: #182868;
-  background: #36c000;
-}
-
-h1::selection,
-h2::selection,
-h3::selection,
-h4::selection,
-h5::selection,
-p::selection {
-  color: #182868;
-  background: #36c000;
-}
-
 header {
   position: sticky;
   top: 1.2rem;
@@ -110,53 +74,44 @@ header .menuInactivo:hover {
   padding-bottom: 5rem;
   background: linear-gradient(#fafafa, #fafafa, rgba(88, 88, 88, 0.6745098039));
 }
-
-.inicio {
+.landing .inicio {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 0.5fr 1fr 0.5fr;
   grid-template-areas: ". imginicio1 . . imginicio5 ." "imginicio4 textoInicio textoInicio textoInicio textoInicio imginicio2" "imginicio4 . . imginicio3 . .";
   align-items: center;
   justify-items: center;
-  margin-block: 3rem;
 }
-
-.textoInicio {
+.landing .textoInicio {
   text-shadow: rgba(0, 0, 0, 0.2078431373) 0.2rem 0.2rem 0.2rem;
   grid-area: textoInicio;
   text-align: center;
 }
-
-.imginicio1 {
+.landing .imginicio1 {
   grid-area: imginicio1;
   transform: rotate(30deg);
 }
-
-.imginicio2 {
+.landing .imginicio2 {
   grid-area: imginicio2;
   transform: rotate(20deg);
 }
-
-.imginicio3 {
+.landing .imginicio3 {
   grid-area: imginicio3;
 }
-
-.imginicio4 {
+.landing .imginicio4 {
   grid-area: imginicio4;
-  transform: rotate(310deg);
+  transform: rotate(670deg);
 }
-
-.imginicio5 {
+.landing .imginicio5 {
   grid-area: imginicio5;
-  transform: rotate(340deg);
+  transform: rotate(700deg);
 }
-
-.imgBot {
+.landing .imgBot {
   width: 5rem;
   z-index: 2;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 }
-.imgBot:hover {
+.landing .imgBot:hover {
   transform: rotate(300deg);
 }
 
@@ -502,7 +457,18 @@ p::selection {
 }
 
 /* CATALOGO */
-.catalogoCategorias__menu {
+.catalogoMenuImagenes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.1fr 1fr;
+  grid-template-areas: "filtro categorias" "catalogo catalogo";
+  gap: 2rem;
+  background: linear-gradient(#fafafa, #fafafa, rgba(88, 88, 88, 0.6745098039));
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.catalogoMenuImagenes .catalogoCategorias__menu {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -510,31 +476,22 @@ p::selection {
   margin-block: 2rem;
   gap: 1rem;
   padding-inline: 2rem;
+  grid-area: categorias;
 }
-
-.catalogoMenuImagenes {
-  display: grid;
-  grid-template-columns: 1fr 6fr;
-  grid-template-areas: "filtro catalogo";
-  position: relative;
-  background: linear-gradient(#fafafa, #fafafa, rgba(88, 88, 88, 0.6745098039));
-}
-
-.filtroLateralCatalogo {
-  position: sticky;
-  top: 1rem;
+.catalogoMenuImagenes .filtroLateralCatalogo {
   grid-area: filtro;
   display: flex;
   flex-direction: column;
-  padding: 3rem;
+  align-items: center;
+  justify-content: center;
 }
-
-.catalogoTarjetas {
+.catalogoMenuImagenes .catalogoTarjetas {
   grid-area: catalogo;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+  padding: 2rem 5rem;
 }
 
 .tarjetaCatalogo {
@@ -572,6 +529,10 @@ p::selection {
 
 .imagenProducto {
   width: 100%;
+  transition: all 0.3s ease;
+}
+.imagenProducto:hover {
+  transform: scale(1.1);
 }
 
 .productoSeccion__titulo {
@@ -601,6 +562,42 @@ p::selection {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+* {
+  font-family: "Quicksand", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+  color: #182868;
+}
+
+a {
+  text-decoration: none;
+  color: #182868;
+}
+
+.letraTitulo {
+  font-family: "Arsenal", sans-serif;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, p::-moz-selection {
+  color: #182868;
+  background: #36c000;
+}
+
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+p::selection {
+  color: #182868;
+  background: #36c000;
 }
 
 @keyframes respirafondo {
@@ -757,6 +754,10 @@ p::selection {
     width: 85vw;
   }
   /* PRODUCTO */
+  .catalogoMenuImagenes {
+    display: flex;
+    flex-direction: column;
+  }
   .productoSeccion {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.1fr 0.1fr 0.1fr 1fr 0.1fr;

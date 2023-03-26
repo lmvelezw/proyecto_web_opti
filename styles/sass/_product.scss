@@ -24,7 +24,11 @@
     grid-area: comprar;
 }
 .imagenProducto{
-    width: 100%;   
+    width: 100%;
+    transition: all 0.3s ease;
+    &:hover{
+        transform: scale(1.1);
+    }
 }
 .productoSeccion__titulo{
     grid-area: titulo;

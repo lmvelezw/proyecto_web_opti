@@ -12,7 +12,7 @@
 
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="shortcut icon" href="../img/Favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/Favicon.webp" type="image/x-icon">
     <link rel="stylesheet" href="../styles/sass/estilos.css">
 
 </head>
@@ -22,7 +22,7 @@
 <!-- Navbar -->
         <nav class="navbar navbar-expand-lg rounded-4 mx-5 mt-3 p-0">
             <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html"><img class="imgFavicon" src="../img/Favicon.png" alt="Favicon"></a>
+              <a class="navbar-brand" href="../index.html"><img class="imgFavicon" src="../img/Favicon.webp" alt="Favicon"></a>
               <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -55,44 +55,48 @@
           </nav> 
     </header>
     <main>
-        <section class="catalogo">
-            <div class="catalogoCategorias d-flex flex-column align-items-center justify-content-center">
-                <h4 class="letraTitulo mt-5">Categorías</h4>
-
-                <div class="btn-group my-5" role="group" aria-label="Basic checkbox toggle button group">
-                    <input type="checkbox" class="btn-check m-2 " id="btncheck1" autocomplete="off">
-                    <label class="shadow  btn" for="btncheck1">Alimento</label>
-                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-                    <label class="shadow btn" for="btncheck2">Cosmética</label>
-                    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
-                    <label class="shadow btn" for="btncheck3">Farmacéutica</label>
-                    <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
-                    <label class="shadow btn" for="btncheck4">Industrial</label>
-                    <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off">
-                    <label class="shadow btn" for="btncheck5">Tapas</label>
-                    <input type="checkbox" class="btn-check" id="btncheck6" autocomplete="off">
-                    <label class="shadow btn" for="btncheck6">Tapones</label>
-                </div>                  
-
-            </div>
-        </section>
-
-<!-- Filtros -->
         <Section class="catalogoMenuImagenes">
+            <div class="catalogoCategorias d-flex flex-column align-items-center justify-content-center">
+                <h4 class="letraTitulo ">Categorías</h4>
+
+                <div class="btn-group d-flex flex-wrap rounded-0 mx-5" role="group" aria-label="Basic checkbox toggle button group">
+
+                    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                    <label class="btn rounded-0 shadow-none btn-outline-secondary" for="btncheck1">Alimento</label>
+                    
+                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                    <label class="btn rounded-0 shadow-none btn-outline-secondary" for="btncheck2">Cosmética</label>
+                    
+                    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                    <label class="btn rounded-0 shadow-none btn-outline-secondary" for="btncheck3">Farmacéutica</label>
+
+                    <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+                    <label class="btn rounded-0 shadow-none btn-outline-secondary" for="btncheck4">Industrial</label>
+
+                    <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off">
+                    <label class="btn rounded-0 shadow-none btn-outline-secondary" for="btncheck5">Tapas</label>
+                    
+                    <input type="checkbox" class="btn-check" id="btncheck6" autocomplete="off">
+                    <label class="btn rounded-0 shadow-none btn-outline-secondary" for="btncheck6">Tapones</label>
+                </div>                  
+            </div>
+
             <div class="filtroLateralCatalogo">
                 <h4 class="letraTitulo">Filtros</h4>
-                <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-                    <div class="btn-group border my-2" role="group">
-                      <button type="button" class="btn  dropdown-toggle shadow-none" data-bs-toggle="dropdown" aria-expanded="false">Cuello</button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#"><option value="24410">24/410</option></a></li>
-                            <li><a class="dropdown-item" href="#"><option value="24415">24/415</option></a></li>
-                            <li><a class="dropdown-item" href="#"><option value="20415">20/415</option></a></li>
-                            <li><a class="dropdown-item" href="#"><option value="20410">20/410</option></a></li>
-                        </ul>
+                <div class="btn-group d-flex flex-wrap justify-content-center align-items-center" role="group" aria-label="Button group with nested dropdown">
+                    <div class="btn-group border-none" role="group">
+                      <button type="button" class="btn dropdown-toggle shadow-none rounded-0 shadow-none btn-outline-secondary" data-bs-toggle="dropdown" aria-expanded="false">
+                        Cuello
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="btn dropdown-item" href="#"><option value="24410">24/410</option></a></li>
+                        <li><a class="dropdown-item" href="#"><option value="24415">24/415</option></a></li>
+                        <li><a class="dropdown-item" href="#"><option value="20415">20/415</option></a></li>
+                        <li><a class="dropdown-item" href="#"><option value="20410">20/410</option></a></li>
+                      </ul>
                     </div>
-                    <div class="btn-group border my-2" role="group">
-                        <button type="button" class="btn  dropdown-toggle shadow-none" data-bs-toggle="dropdown" aria-expanded="false">Material</button>
+                    <div class="btn-group border-none" role="group">
+                        <button type="button" class="btn dropdown-toggle shadow-none rounded-0 shadow-none btn-outline-secondary" data-bs-toggle="dropdown" aria-expanded="false">Material</button>
                           <ul class="dropdown-menu">
                               <li><a class="dropdown-item" href="#"><option value="PET">PET</option></a></li>
                               <li><a class="dropdown-item" href="#"><option value="PEAD">PEAD</option></a></li>
@@ -100,8 +104,8 @@
                               <li><a class="dropdown-item" href="#"><option value="PVC">PVC</option></a></li>
                           </ul>
                       </div>
-                      <div class="btn-group border my-2" role="group">
-                        <button type="button" class="btn  dropdown-toggle shadow-none" data-bs-toggle="dropdown" aria-expanded="false">Capacidad</button>
+                      <div class="btn-group border-none" role="group">
+                        <button type="button" class="btn dropdown-toggle shadow-none rounded-0 shadow-none btn-outline-secondary" data-bs-toggle="dropdown" aria-expanded="false">Capacidad</button>
                           <ul class="dropdown-menu">
                               <li><a class="dropdown-item" href="#"><option value="50">1 mL - 50 mL</option></a></li>
                               <li><a class="dropdown-item" href="#"><option value="100">51 mL - 100 mL</option></a></li>
@@ -109,14 +113,13 @@
                               <li><a class="dropdown-item" href="#"><option value="1000">501 mL - 1000 mL</option></a></li>
                           </ul>
                       </div>
-                    
+                  </div>
                 </div>
-            </div>
 <!-- Catalogo -->
             <div class="catalogoTarjetas">
                 <div class="card border-0 rounded-3 m-2 tarjetaCatalogo">
                     <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
-                        <img src="../img/catalogo/132.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <img src="../img/catalogo/132.webp" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
                         <div class="card-body">
                             <p p class="card-link card-text fw-semibold ">Envase XXX</p>
                         </div>
@@ -124,7 +127,7 @@
                 </div>
                 <div class="card border-0 rounded-3 m-2 tarjeta">
                     <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
-                        <img src="../img/catalogo/133.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <img src="../img/catalogo/133.webp" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
                         <div class="card-body">
                             <p p class="card-link card-text fw-semibold ">Envase XXX</p>
                         </div>
@@ -132,7 +135,7 @@
                 </div>
                 <div class="card border-0 rounded-3 m-2 tarjeta">
                     <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
-                        <img src="../img/catalogo/134.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <img src="../img/catalogo/134.webp" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
                         <div class="card-body">
                             <p p class="card-link card-text fw-semibold ">Envase XXX</p>
                         </div>
@@ -140,7 +143,7 @@
                 </div>
                 <div class="card border-0 rounded-3 m-2 tarjeta">
                     <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
-                        <img src="../img/catalogo/135.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <img src="../img/catalogo/135.webp" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
                         <div class="card-body">
                             <p p class="card-link card-text fw-semibold ">Envase XXX</p>
                         </div>
@@ -148,7 +151,7 @@
                 </div>
                 <div class="card border-0 rounded-3 m-2 tarjeta">
                     <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
-                        <img src="../img/catalogo/136.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <img src="../img/catalogo/136.webp" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
                         <div class="card-body">
                             <p p class="card-link card-text fw-semibold ">Envase XXX</p>
                         </div>
@@ -156,7 +159,7 @@
                 </div>
                 <div class="card border-0 rounded-3 m-2 tarjeta">
                     <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
-                        <img src="../img/catalogo/137.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <img src="../img/catalogo/137.webp" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
                         <div class="card-body">
                             <p p class="card-link card-text fw-semibold ">Envase XXX</p>
                         </div>
@@ -164,7 +167,7 @@
                 </div>
                 <div class="card border-0 rounded-3 m-2 tarjeta">
                     <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
-                        <img src="../img/catalogo/138.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <img src="../img/catalogo/138.webp" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
                         <div class="card-body">
                             <p p class="card-link card-text fw-semibold ">Envase XXX</p>
                         </div>
@@ -172,7 +175,7 @@
                 </div>
                 <div class="card border-0 rounded-3 m-2 tarjeta">
                     <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
-                        <img src="../img/catalogo/139.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <img src="../img/catalogo/139.webp" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
                         <div class="card-body">
                             <p p class="card-link card-text fw-semibold ">Envase XXX</p>
                         </div>
@@ -180,7 +183,7 @@
                 </div>
                 <div class="card border-0 rounded-3 m-2 tarjeta">
                     <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
-                        <img src="../img/catalogo/140.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <img src="../img/catalogo/140.webp" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
                         <div class="card-body">
                             <p p class="card-link card-text fw-semibold ">Envase XXX</p>
                         </div>
@@ -188,7 +191,7 @@
                 </div>
                 <div class="card border-0 rounded-3 m-2 tarjeta">
                     <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
-                        <img src="../img/catalogo/141.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <img src="../img/catalogo/141.webp" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
                         <div class="card-body">
                             <p p class="card-link card-text fw-semibold ">Envase XXX</p>
                         </div>
@@ -196,7 +199,7 @@
                 </div>
                 <div class="card border-0 rounded-3 m-2 tarjeta">
                     <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
-                        <img src="../img/catalogo/142.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <img src="../img/catalogo/142.webp" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
                         <div class="card-body">
                             <p p class="card-link card-text fw-semibold ">Envase XXX</p>
                         </div>
@@ -204,7 +207,7 @@
                 </div>
                 <div class="card border-0 rounded-3 m-2 tarjeta">
                     <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
-                        <img src="../img/catalogo/143.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <img src="../img/catalogo/143.webp" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
                         <div class="card-body">
                             <p p class="card-link card-text fw-semibold ">Envase XXX</p>
                         </div>
@@ -212,7 +215,7 @@
                 </div>
                 <div class="card border-0 rounded-3 m-2 tarjeta">
                     <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
-                        <img src="../img/catalogo/144.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <img src="../img/catalogo/144.webp" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
                         <div class="card-body">
                             <p p class="card-link card-text fw-semibold ">Envase XXX</p>
                         </div>
@@ -220,7 +223,7 @@
                 </div>
                 <div class="card border-0 rounded-3 m-2 tarjeta">
                     <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
-                        <img src="../img/catalogo/145.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <img src="../img/catalogo/145.webp" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
                         <div class="card-body">
                             <p p class="card-link card-text fw-semibold ">Envase XXX</p>
                         </div>
@@ -228,7 +231,7 @@
                 </div>
                 <div class="card border-0 rounded-3 m-2 tarjeta">
                     <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
-                        <img src="../img/catalogo/146.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <img src="../img/catalogo/146.webp" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
                         <div class="card-body">
                             <p p class="card-link card-text fw-semibold ">Envase XXX</p>
                         </div>
@@ -236,7 +239,7 @@
                 </div>
                 <div class="card border-0 rounded-3 m-2 tarjeta">
                     <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
-                        <img src="../img/catalogo/147.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <img src="../img/catalogo/147.webp" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
                         <div class="card-body">
                             <p p class="card-link card-text fw-semibold ">Envase XXX</p>
                         </div>
@@ -244,7 +247,7 @@
                 </div>
                 <div class="card border-0 rounded-3 m-2 tarjeta">
                     <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
-                        <img src="../img/catalogo/148.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <img src="../img/catalogo/148.webp" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
                         <div class="card-body">
                             <p p class="card-link card-text fw-semibold ">Envase XXX</p>
                         </div>
@@ -252,7 +255,7 @@
                 </div>
                 <div class="card border-0 rounded-3 m-2 tarjeta">
                     <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
-                        <img src="../img/catalogo/149.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <img src="../img/catalogo/149.webp" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
                         <div class="card-body">
                             <p p class="card-link card-text fw-semibold ">Envase XXX</p>
                         </div>
@@ -260,7 +263,7 @@
                 </div>
                 <div class="card border-0 rounded-3 m-2 tarjeta">
                     <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
-                        <img src="../img/catalogo/150.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <img src="../img/catalogo/150.webp" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
                         <div class="card-body">
                             <p p class="card-link card-text fw-semibold ">Envase XXX</p>
                         </div>
@@ -268,7 +271,7 @@
                 </div>
                 <div class="card border-0 rounded-3 m-2 tarjeta">
                     <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
-                        <img src="../img/catalogo/151.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <img src="../img/catalogo/151.webp" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
                         <div class="card-body">
                             <p p class="card-link card-text fw-semibold ">Envase XXX</p>
                         </div>
@@ -276,7 +279,7 @@
                 </div>
                 <div class="card border-0 rounded-3 m-2 tarjeta">
                     <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
-                        <img src="../img/catalogo/152.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <img src="../img/catalogo/152.webp" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
                         <div class="card-body">
                             <p p class="card-link card-text fw-semibold ">Envase XXX</p>
                         </div>
@@ -284,7 +287,7 @@
                 </div>
                 <div class="card border-0 rounded-3 m-2 tarjeta">
                     <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
-                        <img src="../img/catalogo/153.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <img src="../img/catalogo/153.webp" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
                         <div class="card-body">
                             <p p class="card-link card-text fw-semibold ">Envase XXX</p>
                         </div>
@@ -292,7 +295,7 @@
                 </div>
                 <div class="card border-0 rounded-3 m-2 tarjeta">
                     <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
-                        <img src="../img/catalogo/154.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <img src="../img/catalogo/154.webp" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
                         <div class="card-body">
                             <p p class="card-link card-text fw-semibold ">Envase XXX</p>
                         </div>
@@ -300,7 +303,7 @@
                 </div>
                 <div class="card border-0 rounded-3 m-2 tarjeta">
                     <a class="d-flex flex-column align-items-center justify-content-center" href="./product.html">
-                        <img src="../img/catalogo/155.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
+                        <img src="../img/catalogo/155.webp" alt="Envase" class="card-img-top img-fluid tarjetaImagen">
                         <div class="card-body">
                             <p p class="card-link card-text fw-semibold ">Envase XXX</p>
                         </div>
@@ -317,7 +320,7 @@
     <div class="row row-cols-1 row-cols-md-4 row-cols-sm-2 g-5 m-5 d-flex text-center">
         <div class="col">
           <div class="card h-100 rounded-4 tarjeta">
-            <img src="../img/catalogo/132.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen pt-3">
+            <img src="../img/catalogo/132.webp" alt="Envase" class="card-img-top img-fluid tarjetaImagen pt-3">
             <div class="card-body">
               <h5 class="card-title">Envase XXX</h5>
               <p class="card-text">Envase redondo en PEAD</p>
@@ -329,7 +332,7 @@
         </div>
         <div class="col">
           <div class="card h-100 rounded-4 tarjeta">
-            <img src="../img/catalogo/133.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen pt-3">
+            <img src="../img/catalogo/133.webp" alt="Envase" class="card-img-top img-fluid tarjetaImagen pt-3">
             <div class="card-body">
               <h5 class="card-title">Envase XXX</h5>
               <p class="card-text">Envase redondo en PP</p>
@@ -341,7 +344,7 @@
         </div>
         <div class="col">
           <div class="card h-100 rounded-4 tarjeta">
-            <img src="../img/catalogo/134.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen pt-3">
+            <img src="../img/catalogo/134.webp" alt="Envase" class="card-img-top img-fluid tarjetaImagen pt-3">
             <div class="card-body">
               <h5 class="card-title">Envase XXX</h5>
               <p class="card-text">Envase redondo en PVC</p>
@@ -353,7 +356,7 @@
         </div>
         <div class="col">
           <div class="card h-100 rounded-4 tarjeta">
-            <img src="../img/catalogo/135.png" alt="Envase" class="card-img-top img-fluid tarjetaImagen pt-3">
+            <img src="../img/catalogo/135.webp" alt="Envase" class="card-img-top img-fluid tarjetaImagen pt-3">
             <div class="card-body">
               <h5 class="card-title">Envase XXX</h5>
               <p class="card-text">Envase redondo en PEAD</p>
@@ -377,9 +380,9 @@
             <p class="indicadorFooter">D.</p>
                 <p>Carrera 64 # 35-35 <br> Itagüí - Antioquia, Colombia </p>
         </div>
-        <img class="imgFavicon" src="../img/Favicon.png" alt="Favicon">
+        <img class="imgFavicon" src="../img/Favicon.webp" alt="Favicon">
         <div class="derechos">
-            <img class="imgFavicon_LM" src="../img/Logo_LM.png" alt="Logo LM">
+            <img class="imgFavicon_LM" src="../img/Logo_LM.webp" alt="Logo LM">
             <p class="derechosTexto">LMVW 2023</p>
         </div>
     </footer>

@@ -4,53 +4,52 @@
 .landing{
     padding-bottom: 5rem;
     background: linear-gradient(#fafafa,#fafafa, #585858ac);
-}
-.inicio{
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 0.5fr 1fr 0.5fr;
-    grid-template-areas: 
-    ". imginicio1 . . imginicio5 ."
-    "imginicio4 textoInicio textoInicio textoInicio textoInicio imginicio2"
-    "imginicio4 . . imginicio3 . .";
-    align-items: center;
-    justify-items: center;
-    margin-block: 3rem;
-}
-.textoInicio {
-    text-shadow: #00000035 0.2rem 0.2rem 0.2rem;
-    grid-area: textoInicio;
-    text-align: center;
-}
-.imginicio1{
-    grid-area: imginicio1;
-    transform: rotate(30deg);
-}
-.imginicio2{
-    grid-area: imginicio2;
-    transform: rotate(20deg);
-}
-.imginicio3{
-    grid-area: imginicio3;
-}
-.imginicio4{
-    grid-area: imginicio4;
-    transform: rotate(310deg);
-}
-.imginicio5{
-    grid-area: imginicio5;
-    transform: rotate(340deg);
-}
-.imgBot{
-    width: 5rem;
-    z-index: 2;
-    transition: all 1s ease;
 
-    &:hover{
-        transform: rotate(300deg);
+    .inicio{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 0.5fr 1fr 0.5fr;
+        grid-template-areas: 
+        ". imginicio1 . . imginicio5 ."
+        "imginicio4 textoInicio textoInicio textoInicio textoInicio imginicio2"
+        "imginicio4 . . imginicio3 . .";
+        align-items: center;
+        justify-items: center;
+    }
+    .textoInicio {
+        text-shadow: #00000035 0.2rem 0.2rem 0.2rem;
+        grid-area: textoInicio;
+        text-align: center;
+    }
+    .imginicio1{
+        grid-area: imginicio1;
+        transform: rotate(30deg);
+    }
+    .imginicio2{
+        grid-area: imginicio2;
+        transform: rotate(20deg);
+    }
+    .imginicio3{
+        grid-area: imginicio3;
+    }
+    .imginicio4{
+        grid-area: imginicio4;
+        transform: rotate(670deg);
+    }
+    .imginicio5{
+        grid-area: imginicio5;
+        transform: rotate(700deg);
+    }
+    .imgBot{
+        width: 5rem;
+        z-index: 2;
+        transition: all 0.5s ease;
+
+        &:hover{
+            transform: rotate(300deg);
+        }
     }
 }
-
 /* VIDEO */
 .imgPpal{
     width: 100%;
