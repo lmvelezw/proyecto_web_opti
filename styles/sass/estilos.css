@@ -721,9 +721,10 @@ p::selection {
   .catalogoTarjetas .tarjeta {
     margin: 0.5rem 0.5rem;
   }
-  .catalogoTarjetas {
+  .catalogoMenuImagenes .catalogoTarjetas {
     margin-bottom: 3rem;
     justify-content: space-around;
+    padding: 2rem;
   }
   .filtroLateralCatalogo {
     padding: 1rem 1rem 0 2rem;
@@ -763,6 +764,12 @@ p::selection {
     grid-template-rows: 0.1fr 0.1fr 0.1fr 1fr 0.1fr;
     grid-gap: 0.5rem;
     grid-template-areas: "titulo titulo" "descripcion descripcion" "usos caracteristicas " "imagen imagen  " "comprar comprar ";
+  }
+}
+@media screen and (max-width: 520px) {
+  .catalogoMenuImagenes .catalogoTarjetas {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
   }
 }
 /* PHONE */
