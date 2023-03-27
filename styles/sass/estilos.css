@@ -8,6 +8,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&display=swap");
 * {
   font-family: "Quicksand", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-display: swap;
+}
+
+body {
+  background-color: #fafafa;
+  color: #182868;
+}
+
+a {
+  text-decoration: none;
+  color: #182868;
+}
+
+.letraTitulo {
+  font-family: "Arsenal", sans-serif;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, p::-moz-selection {
+  color: #182868;
+  background: #36c000;
+}
+
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+p::selection {
+  color: #182868;
+  background: #36c000;
+}
+
+* {
+  font-family: "Quicksand", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-display: swap;
 }
 
 body {
@@ -137,6 +175,7 @@ header .menuInactivo:hover {
 
 * {
   font-family: "Quicksand", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-display: swap;
 }
 
 body {
@@ -235,6 +274,7 @@ footer .derechos .derechosTexto {
 
 * {
   font-family: "Quicksand", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-display: swap;
 }
 
 body {
@@ -564,42 +604,6 @@ p::selection {
   align-items: center;
 }
 
-* {
-  font-family: "Quicksand", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
-body {
-  background-color: #fafafa;
-  color: #182868;
-}
-
-a {
-  text-decoration: none;
-  color: #182868;
-}
-
-.letraTitulo {
-  font-family: "Arsenal", sans-serif;
-  letter-spacing: 0.3rem;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, p::-moz-selection {
-  color: #182868;
-  background: #36c000;
-}
-
-h1::selection,
-h2::selection,
-h3::selection,
-h4::selection,
-h5::selection,
-p::selection {
-  color: #182868;
-  background: #36c000;
-}
-
 @keyframes respirafondo {
   0% {
     box-shadow: 0rem 0rem 0.8rem 0.1rem rgba(0, 0, 0, 0.062745098);
@@ -613,6 +617,7 @@ p::selection {
 }
 .roll-in-left {
   animation: roll-in-left 0.6s ease-out both;
+  animation-delay: 1.5s;
 }
 @keyframes roll-in-left {
   0% {
@@ -626,6 +631,7 @@ p::selection {
 }
 .roll-in-right {
   animation: roll-in-right 0.6s ease-out both;
+  animation-delay: 1.5s;
 }
 @keyframes roll-in-right {
   0% {
@@ -660,6 +666,142 @@ p::selection {
     transform: translate(0);
   }
 }
+.fade-in {
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.catalogoTarjetas div:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.catalogoTarjetas div:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.catalogoTarjetas div:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.catalogoTarjetas div:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.catalogoTarjetas div:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.catalogoTarjetas div:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.catalogoTarjetas div:nth-child(7) {
+  animation-delay: 0.7s;
+}
+
+.catalogoTarjetas div:nth-child(8) {
+  animation-delay: 0.8s;
+}
+
+.catalogoTarjetas div:nth-child(9) {
+  animation-delay: 0.9s;
+}
+
+.catalogoTarjetas div:nth-child(10) {
+  animation-delay: 1s;
+}
+
+.catalogoTarjetas div:nth-child(11) {
+  animation-delay: 1.1s;
+}
+
+.catalogoTarjetas div:nth-child(12) {
+  animation-delay: 1.2s;
+}
+
+.catalogoTarjetas div:nth-child(13) {
+  animation-delay: 1.3s;
+}
+
+.catalogoTarjetas div:nth-child(14) {
+  animation-delay: 1.4s;
+}
+
+.catalogoTarjetas div:nth-child(15) {
+  animation-delay: 1.5s;
+}
+
+.catalogoTarjetas div:nth-child(16) {
+  animation-delay: 1.6s;
+}
+
+.catalogoTarjetas div:nth-child(17) {
+  animation-delay: 1.7s;
+}
+
+.catalogoTarjetas div:nth-child(18) {
+  animation-delay: 1.8s;
+}
+
+.catalogoTarjetas div:nth-child(19) {
+  animation-delay: 1.9s;
+}
+
+.catalogoTarjetas div:nth-child(20) {
+  animation-delay: 2s;
+}
+
+.catalogoTarjetas div:nth-child(21) {
+  animation-delay: 2.1s;
+}
+
+.catalogoTarjetas div:nth-child(22) {
+  animation-delay: 2.2s;
+}
+
+.catalogoTarjetas div:nth-child(23) {
+  animation-delay: 2.3s;
+}
+
+.catalogoTarjetas div:nth-child(24) {
+  animation-delay: 2.4s;
+}
+
+.text-focus-in {
+  animation: text-focus-in 0.8s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.2s both;
+}
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+.navbar-nav li:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.navbar-nav li:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.navbar-nav li:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.navbar-nav li:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
 /* MEDIA QUERYS */
 @media screen and (max-width: 1200px) {
   /* CONTACTO */
